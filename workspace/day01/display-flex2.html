@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>display</title>
+    <style>
+        div {
+            border: 1.5px solid black;
+        }
+
+        div#container{
+            display: flex;
+        }
+
+        div.wrap{
+            justify-content: space-around;
+            display: flex;
+        }
+
+        #container, div.wrap {
+            border: none;
+        }
+
+        div.wrap div{
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="wrap">
+            <div>1열</div>
+            <div>2열</div>
+            <div>3열</div>
+            <div>4열</div>
+        </div>
+        <div class="wrap">
+            <div>1열</div>
+            <div>2열</div>
+            <div>3열</div>
+            <div>4열</div>
+        </div>
+        <div class="wrap">
+            <div>1열</div>
+            <div>2열</div>
+            <div>3열</div>
+            <div>4열</div>
+        </div>
+    </div>
+</body>
+</html>
