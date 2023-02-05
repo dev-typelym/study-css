@@ -1,0 +1,384 @@
+        body {
+            margin: 0;
+            font-size: .875rem;
+            line-height: 1.71429;
+            font-size: 0.875rem;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        
+        @media (max-width: 1100px) {
+            #left-side {
+                display: none;
+            }
+            
+            #second-box {
+                display: none;
+            }
+            
+            #third-box {
+                display: none;
+            }
+        }
+
+        #wrap {
+            width: 100%;
+            display: flex;
+        }
+
+        #left-side {
+            width: 40%;
+            background-color: rgb(0, 88, 163);
+            justify-content: space-between;
+            min-height: 93vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: auto;
+            padding:  2rem 5rem;
+            position: relative;
+        }
+
+        #right-side {
+            width: 60%;
+            height: auto;
+            padding:  2rem 5rem;
+            position: relative;
+        }
+
+        #first-box {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        #second-box {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+        }
+
+        #third-box {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+        }
+
+        #ikea-logo {
+            height: 44px;
+            width: 88px;
+            background-color: rgb(0, 88, 163);
+            position: absolute;
+            left: 108px;
+        }
+
+        .logIn-message {
+            position: absolute;
+            top: 55px;
+            padding: 0 auto;
+            left: 108px;
+            max-width: 25rem;
+        }
+
+        .logIn-text1 {
+            margin: 1rem 0 0;
+            font-size: 32px;
+            color: rgb(251, 217, 20);
+        }
+
+        .logIn-text2 {
+            margin: 0;
+            line-height: 20px;
+            padding-top: 14px;
+            margin-bottom: 0px;
+            color: #ffffff;
+        }
+
+        .logIn-space {
+            height: 30px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            color: #ffffff;
+            left: 108px;
+            font-size: 11px;
+        }
+        
+        .cookie-policy-link{
+            color: #ffffff;
+        }
+        
+        .privacy-policy-link{
+            color: #ffffff;
+        }
+
+        .svg-color {
+            color: #ffffff;
+        }
+
+        .svg-icon {
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            color: #ffffff;
+        }
+
+        #right-side {
+            padding: 2rem 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .right-form {
+            width: 28rem;
+            padding: 1rem 0rem;
+        }
+
+        .input-id input:focus {
+            border: 2px solid #0058a3;
+            outline: none;
+        }
+
+        .id {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2px;
+        }
+
+        #family-signup-form-id {
+            border-radius: 4px;
+            width: 100%;
+            font-size: 1rem;
+            height: 3rem;
+            line-height: 1.5;
+            padding: 0;
+            /* border: 0; */
+            padding-inline-start: 0.5rem;
+            padding-inline-end: 0.5rem;
+            box-sizing: border-box
+        }
+
+        .alternative-link {
+            color: #484848;
+            font-weight: bold;
+        }
+
+        .signup-form-space {
+            height: 24px;
+        }
+        
+        .input-password input:focus {
+            border: 2px solid #0058a3;
+            outline: none;
+        }
+
+        .password {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2px;
+        }
+
+        #family-signup-form-password {
+            border-radius: 4px;
+            width: 100%;
+            border: 0;
+            font-size: 1rem;
+            height: 3rem;
+            line-height: 1.5;
+            padding: 0;
+            padding-inline-start: 0.5rem;
+            padding-inline-end: 0.5rem;
+            box-sizing: border-box
+            
+        }
+
+        .input-password {
+            display: flex;
+            position: relative;
+        }
+
+        .input-field-border2 {
+            border: 1px solid rgb(118,118,118);
+            border-radius: 4px;
+            bottom: 0;
+            display: block;
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        .btn-eye {
+            background: none;
+            border: 0;
+            border-radius: 64px;
+            cursor: pointer;
+            display: inline-flex;
+            font-size: .875rem;
+            font-weight: 700;
+            line-height: 1.4285714286;
+            outline: 0;
+            padding: 0;
+            position: relative;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .btn-label {
+            clip: rect(1px,1px,1px,1px);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+        }
+
+        .btn-inner2 {
+            align-items: center;
+            border-radius: 64px;
+            display: inline-flex;
+            justify-content: center;
+            min-height: 2rem;
+            padding: 0;
+            width: 3rem;   
+        }
+
+        .svg-eye-icon {
+            fill: currentColor;
+            display: inline-block;
+            height: 1.5rem;
+            vertical-align: middle;
+            width: 1.5rem;
+        }
+
+        .forgotPassword-link {
+            color: #484848;
+            font-weight: bold;
+        }
+
+        .remember-me {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2px;
+        }
+
+        .svg-icon2 {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .remember-me-check {
+            border-radius: 4px;
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+
+        .checkbox {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-label {
+            padding-inline-start: 1.25rem;
+        }
+
+        .signup-form-space2 {
+            height: 26px;
+        }
+
+        .btn-login {
+            background: none;
+            border: 0;
+            border-radius: 64px;
+            cursor: pointer;
+            display: inline-flex;
+            font-size: .875rem;
+            font-weight: 700;
+            line-height: 1.4285714286;
+            outline: 0;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .btn-inner {
+            background-color: #0058a3;
+            align-items: center;
+            border-radius: 64px;
+            display: inline-flex;
+            justify-content: space-around;
+            min-height: 3.5rem;
+            padding: 0 2rem;
+            width: 100%;
+            align-content: space-around;
+        }
+
+        .btn-login-label {
+            color: #fff;
+        }
+
+        .btn-login :hover {
+            background-color: #004f93;
+        }
+        
+        .signup-form-space3 {
+            height: 64px;
+        }
+
+        .make-message {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: inherit;
+        }
+
+        .signup-form-space4 {
+            height: 32px;
+        }
+
+        .btn-individual-business-member {
+            background: none;
+            border: 1px solid;
+            border-radius: 64px;
+            cursor: pointer;
+            display: inline-flex;
+            font-size: .875rem;
+            font-weight: 700;
+            line-height: 1.4285714286;
+            outline: 0;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .btn-inner3 {
+            background-color: #fff;
+            align-items: center;
+            border-radius: 64px;
+            display: inline-flex;
+            justify-content: space-around;
+            min-height: 3.5rem;
+            padding: 0 2rem;
+            width: 100%;
+            align-content: space-around;
+        }
+
+        .btn-individual-business-member-label {
+            color: #111;
+        }
+
+        .btn-individual-business-member :hover {
+            border: 1.5px solid;
+            outline: none;
+        }
+
+        .signup-form-space5 {
+            height: 16px;
+        }

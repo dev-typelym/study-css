@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 - IKEA</title>
+    <link rel="icon" href="https://kr.accounts.ikea.com/resources/kr/favicon-16x16.png " type="image/x-icon">
+    <link rel="stylesheet" href="ikea-login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <div id="left-side" class="container">
+            <div id="first-box" class="left-box">
+                <div class="svg-arrow-icon">
+                    <a href="https://kr.accounts.ikea.com/login?state=hKFo2SA5VnhxazRaS1hZeFVYQVJnclBzbGs4WGRua2FrX1RZU6FupWxvZ2luo3RpZNkgX09ab1ZsX2labDdVOEhEMzJpYjBTQnR4bFN5dS04RjajY2lk2SBtNUhWWk55RkkxME80OXNvZ1FRYjJVSVVzeVNzR1YyOQ&client=m5HVZNyFI10O49sogQQb2UIUsySsGV29&protocol=oauth2&redirect_uri=https%3A%2F%2Fwww.ikea.com%2Fkr%2Fko%2Fprofile%2Flogin%2F&response_type=code&ui_locales=ko-KR&code_challenge=3qeNNpBGhy8ZWp0AjGSGttyAz1OASs6Z8XYN4-jM-10&code_challenge_method=S256&scope=openid%20profile%20email%20offline_access&audience=https%3A%2F%2Fretail.api.ikea.com&registration=%7B%7D&consumer=OWF&auth0Client=eyJuYW1lIjoiYXV0aDAuanMiLCJ2ZXJzaW9uIjoiOS4xOS4xIn0%3D&gasid=GA1.2.635196336.1675603094&sessId=dfb37d22-6821-4135-b9c4-e12616619644">
+                        <svg focusable="false" viewBox="0 0 24 24" class="svg-icon" aria-hidden="true">
+                            <path fill-rule="evenodd" class="svg-color" clip-rule="evenodd" d="m3.999 11.9997 8 8.0011 1.4143-1.4141-5.5859-5.5866H20v-2H7.8273l5.5871-5.5868-1.4142-1.4143-8.0012 8.0007z"></path>
+                        </svg>
+                     </a>
+                </div>
+                <img id="ikea-logo" alt="IKEA" src="https://kr.accounts.ikea.com/resources/static/logo.svg" color="black">
+            </div>
+            <div id="second-box" class="left-box">
+                <div class="logIn-message">
+                    <h1 class="logIn-text1">
+                        <span>로그인</span>
+                    </h1>
+                    <p class="logIn-text2">외워야 할 비밀번호가 많아 불편하셨죠?<br>이제 일회용 코드를 이용하여 간편하게  로그인하세요. <br><br>* 이메일 또는 휴대폰 번호 최초 인증 후 사용 가능</p>
+                    <div class="logIn-space"></div>
+                </div>
+            </div>
+            <div id="third-box" class="left-box">
+                <div class="footer">
+                    <span class="kiosk-label">
+                        IKEA.kr - 
+                    </span>
+                    <a target="_blank" href="https://www.ikea.com/kr/ko/customer-service/cookie-policy" class="cookie-policy-link" aria-disabled="false">쿠키 정책</a>
+                    <span class="kiosk-label"> , </span>
+                    <a target="_blank" href="https://www.ikea.com/kr/ko/customer-service/privacy-policy/privacy-policy-pub20a57ecd" class="privacy-policy-link" aria-disabled="false">개인정보처리방침</a>
+                    <div class="kiosk-label">© Inter IKEA Systems B.V. 1999-2023</div>
+                </div>
+            </div>
+        </div>
+        <div id="right-side" class="container">
+            <div class="right-form">
+                <form novalidate name="signup-form">
+                    <div class="signup-form-space"></div>
+                    <div class="form-id">
+                        <div class="input-id-wrap">
+                            <div class="id">
+                                <label id="family-signup-form-id-label" for="family-signup-form-id">
+                                    이메일 또는 확인된 휴대폰 번호
+                                </label>
+                            </div>
+
+                            <div class="input-id">
+                                <input type="text" id="family-signup-form-id" required name="id" maxlength="50" aria-required="true">
+                                <!--<span class="input-field-border"></span> 자바스크립트용-->
+                            </div>
+                        </div>
+                        <span class="logIn-alternative-option">다른 로그인 옵션:</span>
+                        <a name="alternativeLoginLink" href="#" class="alternative-link" role="button" aria-disabled="false">일회용 코드로 로그인</a>
+                    </div>
+
+                    <div class="signup-form-space"></div>
+                    <div class="form-password">
+                        <div class="input-password-wrap">
+                            <div class="password">
+                                <label id="family-signup-form-password-label" for="family-signup-form-password">
+                                    비밀번호    
+                                </label>
+                            </div>
+
+                            <div class="input-password">
+                                <input type="text" id="family-signup-form-password" required name="password" maxlength="50" aria-required="true">
+                           
+                                    <span class="btn-inner2">
+                                        <svg focusable="false" viewBox="0 0 24 24" class="svg-icon btn__icon" aria-hidden="true">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9995 8c-2.2091 0-4 1.7909-4 4 0 2.2091 1.7908 4 4 4 2.2091 0 4-1.7909 4-4 0-2.2091-1.7909-4-4-4zm-2 4c0-1.1046.8954-2 2-2s2 .8954 2 2-.8954 2-2 2-2-.8954-2-2z"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2041 12c-.191.2843-.3779.5712-.58.8478a18.5559 18.5559 0 0 1-.5547.719c-.4773.5895-1.1694 1.3776-2.0285 2.1688C17.3585 17.2851 14.87 19 11.9995 19c-2.8705 0-5.359-1.7149-7.0414-3.2644-.859-.7912-1.5512-1.5793-2.0285-2.1688a18.5293 18.5293 0 0 1-.5547-.719c-.202-.2765-.389-.5636-.58-.8478l.3748-.558c.2366-.3481.4952-.6818.7599-1.0088.4773-.5895 1.1694-1.3776 2.0285-2.1688C6.6405 6.715 9.129 5 11.9995 5c2.8705 0 5.359 1.715 7.0414 3.2644.8591.7912 1.5512 1.5793 2.0285 2.1688.2393.2956.4262.5432.5547.719.202.2765.3891.5635.58.8478zM4.2399 12c.4213-.5445 1.1436-1.4084 2.073-2.2644C7.888 8.285 9.8995 7 11.9996 7c2.1001 0 4.1116 1.285 5.6865 2.7356.9295.8561 1.6518 1.7199 2.0731 2.2644-.4213.5445-1.1436 1.4083-2.0731 2.2644C16.1111 15.7149 14.0996 17 11.9995 17c-2.1 0-4.1116-1.2851-5.6865-2.7356-.9295-.8561-1.6518-1.7199-2.0731-2.2644z"></path>
+                                        </svg>
+                                    </span>
+                                <span class="input-field-border2"></span> 
+                            </div>
+                            <a name="forgotPassword" href="http://127.0.0.1:5500/task/ikea-find-password.html" class="forgotPassword-link" aria-disabled="false">비밀번호 찾기</a>
+                        </div>
+                    </div>
+
+                    <div class="signup-form-space4"></div>
+                    <div class="form-remember-me">
+                        <div class="input-remember-me-wrap">
+                            <div class="remember-me">
+                                <span class="checkbox">
+                                    <input type="checkbox" class="remember-me-check" name="remember-me" id="remember-me" value="">
+                                    <span class="checkbox-label">
+                                        <label for="remember-me" class="">로그인 상태 유지</label>
+                                    </span>
+                                </span>
+                                <div>
+                                    <svg focusable="false" viewBox="0 0 24 24" class="svg-icon2" aria-hidden="true"><path d="M12 9.5c.6904 0 1.25-.5596 1.25-1.25S12.6904 7 12 7s-1.25.5596-1.25 1.25S11.3096 9.5 12 9.5zM11 11v6h2v-6h-2z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.4771 2 2 6.4771 2 12c0 5.5228 4.4771 10 10 10 5.5228 0 10-4.4772 10-10 0-5.5229-4.4772-10-10-10zM4 12c0-4.4183 3.5817-8 8-8s8 3.5817 8 8-3.5817 8-8 8-8-3.5817-8-8z"></path></svg>
+                                </div>
+                            </div>
+                        </div>                                    
+                    </div>
+
+                    <div class="signup-form-space2"></div>
+                    <div class="form-login">
+                        <button type="button" class="btn-login">
+                            <span class="btn-inner">
+                                <span class="btn-login-label">로그인</span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="signup-form-space3"></div>
+                    <h2 class="make-message">IKEA 계정이 없으신가요? 지금 바로 만들어보세요.</h2>
+                    <div class="signup-form-space4"></div>
+                    <div class="form-individual-business-member">
+                        <button type="button" class="btn-individual-business-member">
+                            <span class="btn-inner3">
+                                <span class="btn-individual-business-member-label">개인 회원 가입하기</span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="signup-form-space5"></div>
+                    <div class="form-individual-business-member">
+                        <button type="button" class="btn-individual-business-member">
+                            <span class="btn-inner3">
+                                <span class="btn-individual-business-member-label">비즈니스 회원 가입하기</span>
+                            </span>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

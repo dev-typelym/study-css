@@ -1,0 +1,847 @@
+body {
+    margin: 0;
+    font-size: 0.875rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+@media (max-width: 1100px) {
+    #left-side {
+        display: none;
+    }
+
+    #first-box {
+        display: none;
+    }
+    
+    #second-box {
+        display: none;
+    }
+    
+    #third-box {
+        display: none;
+    }
+}
+
+
+#wrap {
+    width: 100%;
+    display: flex;
+}
+
+#left-side {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding:  2rem 5rem;
+    position: relative;
+}
+
+#right-side {
+    width: 60%;
+    height: auto;
+    padding:  2rem 5rem;
+    position: relative;
+}
+
+#first-box {
+    width: 384px;
+    height: 36px;
+    margin: 0 auto;
+}
+
+#second-box {
+    width: 100%;
+    height: 100%;
+
+}
+
+#third-box {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+#ikea-logo {
+    width: 90px;
+    height: 36px;
+}
+
+#site-name {
+    width: 400px;
+    font-size: 32px;
+    margin: 1rem auto 0px;
+}
+
+#space {
+    height: 16px;
+}
+
+#ask-register {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    line-height: 20px;
+}
+#ask-login {
+    text-decoration: underline;
+    color: #484848;
+
+}
+
+#wrap-photo-box{
+    display: flex;
+    margin: 3rem auto 0;
+    width: 400px;
+}
+
+#left-side-photobox {
+    width: 50%;
+    height: auto;
+}
+
+#right-side-photobox {
+    width: 50%;
+    margin-left: 0.4rem;
+    height: auto;
+}
+
+.left-first-photo {
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url(https://kr.accounts.ikea.com/resources/static/SIGNUP_IMAGES_1.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+    height: 16rem;
+}
+    
+.left-second-photo {
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url(https://kr.accounts.ikea.com/resources/static/SIGNUP_IMAGES_2.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+    height: 16rem;
+}
+
+.left-third-photo {
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url(https://kr.accounts.ikea.com/resources/static/SIGNUP_IMAGES_3.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+    height: 12rem;
+}
+
+.left-fourth-photo {
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url(https://kr.accounts.ikea.com/resources/static/SIGNUP_IMAGES_4.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+    height: 16rem;
+}
+
+.right-first-photo {
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url(https://kr.accounts.ikea.com/resources/static/SIGNUP_IMAGES_5.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+    height: 12rem;
+}
+
+.right-second-photo {
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url(https://kr.accounts.ikea.com/resources/static/SIGNUP_IMAGES_6.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+    height: 12rem;
+}
+
+.right-third-photo {
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url(https://kr.accounts.ikea.com/resources/static/SIGNUP_IMAGES_7.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+    height: 16rem;
+}
+
+.right-fourth-photo {
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url(https://kr.accounts.ikea.com/resources/static/SIGNUP_IMAGES_8.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+    height: 12rem;
+}
+
+.right-fifth-photo {
+    background-repeat: no-repeat;
+    content: "";
+    background-image: url(https://kr.accounts.ikea.com/resources/static/SIGNUP_IMAGES_9.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+    height: 16rem;
+}
+
+.second-third-space {
+    height: 30px;
+
+}
+
+.footer {
+    width: 400px;
+    margin: 0 auto;
+    font-size: 11px;
+}
+
+.cookie-policy-link {
+    color: black;
+}
+
+.privacy-policy-link {
+    color: black;
+}
+
+.svg-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.a-label {
+    left: 2rem;
+}
+
+.right-row {
+    width: 28rem;
+    height: 100%;
+    padding: 4rem;
+    position: absolute;
+    top: 0px;
+    padding: 4rem 0px;
+}
+
+form {
+    height: 100%;
+}
+
+fieldset legend {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.radio-button-group {
+    border: 0;
+    margin: 0 0 1.25rem 0;
+    padding: 0;
+}
+
+.radio {
+    display: flex;
+    margin: 0 0 1.25rem 0;
+    width: 100%;
+    position: relative;
+}
+
+.radio input[type=radio] {
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 1.5rem;
+    padding: 0;
+    width: 1.5rem;
+    margin: 0;
+    z-index: 1;
+    color: #0058a3;
+    }
+
+    .radio-profile {
+    width: 24px;
+}
+
+#family-signup-form-profileType-family-option {
+    position: absolute;
+    top: -4px;
+}
+
+#family-signup-form-profileType-regular-option {
+    position: absolute;
+    top: -4px;
+}
+
+.profileType-family {
+    padding-left: 16px;
+}
+
+.profileType-regular {
+    padding-left: 16px;
+}
+
+.signup-form-space {
+    height: 2rem;
+}
+    
+.benefit-link {
+    color: black;
+}
+
+.form-error {
+    display: none;
+    margin-top: 0.25rem;
+}
+
+#family-signup-form-error {
+    display: flex;
+    color: red;
+    line-height: 18px;
+}
+
+.form-field__icon-wrapper {
+    background-color: red;
+}
+
+.input-field-border {
+    border: 1px solid #929292;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    top: 0;
+    width: 100%;
+}
+
+.input-lastName {
+    width: 100%;
+    position: relative;
+}
+
+.input-lastName input:focus {
+    border: 2px solid #0058a3;
+    outline: none;
+}
+
+.lastName {
+    display: flex;
+    margin-bottom: 2px;
+}
+
+#family-signup-form-lastName {
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1rem;
+    height: 3rem;
+    line-height: 1.5;
+    padding: 0;
+    /* border: 0; */
+    padding-inline-start: 0.5rem;
+    padding-inline-end: 0.5rem;
+    box-sizing: border-box
+    
+}
+
+.input-name {
+    width: 100%;
+    position: relative;
+}
+
+.input-name input:focus {
+    border: 2px solid #0058a3;
+    outline: none;
+}
+
+.name {
+    display: flex;
+    margin-bottom: 2px;
+}
+
+#family-signup-form-name {
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1rem;
+    height: 3rem;
+    line-height: 1.5;
+    padding: 0;
+    /* border: 0; */
+    padding-inline-start: 0.5rem;
+    padding-inline-end: 0.5rem;
+    box-sizing: border-box
+    
+}
+
+.input-birth {
+    width: 100%;
+    position: relative;
+}
+
+.input-birth input:focus {
+    border: 2px solid #0058a3;
+    outline: none;
+}
+
+.birth {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+#family-signup-form-birth {
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1rem;
+    height: 3rem;
+    line-height: 1.5;
+    padding: 0;
+    /* border: 0; */
+    padding-inline-start: 0.5rem;
+    padding-inline-end: 0.5rem;
+    box-sizing: border-box
+    
+}
+
+.birth-format-message {
+    font-size: .75rem;
+    line-height: 1.5;
+    color: #767676;
+}
+
+.input-phone input:focus {
+    border: 2px solid #0058a3;
+    outline: none;
+}
+
+.phone {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+#family-signup-form-phone {
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1rem;
+    height: 3rem;
+    line-height: 1.5;
+    padding: 0;
+    /* border: 0; */
+    padding-inline-start: 0.5rem;
+    padding-inline-end: 0.5rem;
+    box-sizing: border-box
+    
+}
+
+.input-gender select:focus {
+    border: 2px solid #0058a3;
+    outline: none;
+}
+
+.gender {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+#family-signup-form-genderCode {
+    width: 100%;
+    height: 3rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.75rem;
+    padding-inline-end: 3rem;
+    padding-inline-start: 0.5rem;
+}
+
+.btn-address {
+    background: none;
+    border: 0;
+    border-radius: 64px;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 1.4285714286;
+    outline: 0;
+    padding: 0;
+
+    text-align: center;
+    vertical-align: top;
+}
+
+.btn-inner {
+    background-color: #0058a3;
+    align-items: center;
+    border-radius: 64px;
+    display: inline-flex;
+    justify-content: space-around;
+    min-height: 3.5rem;
+    padding: 0 2rem;
+    width: 100%;
+    align-content: space-around;
+}
+
+.btn-address-label {
+    color: #fff;
+}
+
+.btn-address :hover {
+    background-color: #004f93;
+}
+
+.address1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+#family-signup-form-address1 {
+    border-radius: 4px;
+    background: none;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    height: 3rem;
+    line-height: 1.5;
+    padding: 0;
+    padding-inline-start: 0.5rem;
+    padding-inline-end: 0.5rem;
+    box-sizing: border-box  
+}
+
+.input-address1 {
+    position: relative;
+}
+
+.input-field-border {
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+    bottom: 0;
+    display: block;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#family-signup-form-address1-label {
+    color: #dfdfdf;
+}
+
+.input-address2 input:focus {
+    border: 2px solid #0058a3;
+    outline: none;
+}
+
+.address2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+#family-signup-form-address2 {
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1rem;
+    height: 3rem;
+    line-height: 1.5;
+    padding: 0;
+    /* border: 0; */
+    padding-inline-start: 0.5rem;
+    padding-inline-end: 0.5rem;
+    box-sizing: border-box
+    
+}
+
+.zipcode {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+#family-signup-form-zipcode {
+    border-radius: 4px;
+    background: none;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    height: 3rem;
+    line-height: 1.5;
+    padding: 0;
+    /* border: 0; */
+    padding-inline-start: 0.5rem;
+    padding-inline-end: 0.5rem;
+    box-sizing: border-box  
+}
+
+.input-zipcode {
+    position: relative;
+}
+
+#family-signup-form-zipcode-label {
+    color: #dfdfdf;
+}
+
+
+.input-preferredStore select:focus {
+    border: 2px solid #0058a3;
+    outline: none;
+}
+
+.preferredStore {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+#family-signup-form-preferredStore {
+    width: 100%;
+    height: 3rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.75rem;
+    padding-inline-end: 3rem;
+    padding-inline-start: 0.5rem;
+}
+
+.input-email input:focus {
+    border: 2px solid #0058a3;
+    outline: none;
+}
+
+.email {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+#family-signup-form-email {
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1rem;
+    height: 3rem;
+    line-height: 1.5;
+    padding: 0;
+    /* border: 0; */
+    padding-inline-start: 0.5rem;
+    padding-inline-end: 0.5rem;
+    box-sizing: border-box
+    
+}
+
+.input-password input:focus {
+    border: 2px solid #0058a3;
+    outline: none;
+}
+
+.password {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+#family-signup-form-password {
+    border-radius: 4px;
+    width: 100%;
+    border: 0;
+    font-size: 1rem;
+    height: 3rem;
+    line-height: 1.5;
+    padding: 0;
+    padding-inline-start: 0.5rem;
+    padding-inline-end: 0.5rem;
+    box-sizing: border-box
+    
+}
+
+.input-password {
+    display: flex;
+    position: relative;
+}
+
+.input-field-border2 {
+    border: 1px solid rgb(118,118,118);
+    border-radius: 4px;
+    bottom: 0;
+    display: block;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.btn-eye {
+    background: none;
+    border: 0;
+    border-radius: 64px;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 1.4285714286;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+}
+
+.btn-label {
+    clip: rect(1px,1px,1px,1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.btn-inner2 {
+    align-items: center;
+    border-radius: 64px;
+    display: inline-flex;
+    justify-content: center;
+    min-height: 2rem;
+    padding: 0;
+    width: 3rem;   
+}
+
+.svg-eye-icon {
+    fill: currentColor;
+    display: inline-block;
+    height: 1.5rem;
+    vertical-align: middle;
+    width: 1.5rem;
+}
+
+.checkbox-group {
+    margin-bottom: 0.5rem;
+    border: 0;
+    padding: 0;
+}
+
+.checkbox {
+    align-items: center;
+    height: auto;
+    width: auto;
+    display: flex;
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+.contact-group-children {
+    margin-left: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.checkbox-label {
+    color: #484848;
+    display: block;
+    font-size: .875rem;
+    margin-top: 0.125rem;
+    position: relative;
+    padding-inline-start: 1.25rem;
+}
+
+input[type="checkbox"] {
+    width: 1.5rem; 
+    height: 1.5rem; 
+    cursor: pointer;
+}
+
+.checkbox1 {
+    align-items: center;
+    width: 105%;
+    display: flex;
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+.last-children {
+    margin-bottom: 0;
+}
+
+.link {
+    color: #484848;
+}
+
+.checkboxlong {
+    align-items: center;
+    width: 110%;
+    display: flex;
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+.btn-submit {
+    background: none;
+    align-items: center;
+    border-radius: 64px;
+    border: 0;
+    display: inline-flex;
+    justify-content: space-around;
+    min-height: 3.5rem;
+    padding: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-inner3 {
+    background-color: #171717;
+    align-items: center;
+    border-radius: 64px;
+    display: inline-flex;
+    justify-content: center;
+    min-height: 3.5rem;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.btn-submit-label {
+    color: #fff;
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 1.4285714286;
+}
+
+.btn-submit :hover {
+    background-color: #484848;
+}
+
+.form-submit {
+    padding-bottom: 4rem;
+}
+
+.svg-arrow-icon {
+    left: 2rem;
+    position: absolute;
+}

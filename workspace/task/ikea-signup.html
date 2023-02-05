@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IKEA</title>
+<link rel="icon" href="https://kr.accounts.ikea.com/resources/kr/favicon-16x16.png " type="image/x-icon">
+<link rel="stylesheet" href="ikea-signup.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <div id="left-side" class="container">
+            <div id="first-box" class="left-box">
+                <div class="svg-arrow-icon">
+                    <a href="http://14.33.225.12:5500/task/ikea-login.html">
+                        <svg focusable="false" viewBox="0 0 24 24" class="svg-icon" aria-hidden="true">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="m3.999 11.9997 8 8.0011 1.4143-1.4141-5.5859-5.5866H20v-2H7.8273l5.5871-5.5868-1.4142-1.4143-8.0012 8.0007z"></path>
+                        </svg>
+                     </a>
+                </div> 
+                <img id="ikea-logo" alt="IKEA" src="https://kr.accounts.ikea.com/resources/static/logo.png" color="black">
+            </div>
+            <div id="second-box" class="left-box">
+               <h1 id="site-name"><span style="color: #0058a3;">IKEA Family</span>
+                회원 가입
+                </h1>
+                <span id="ask-register"><span>이미 가입하셨나요?</span>
+                    <a id="ask-login" name="back-to-login-link" href="http://14.33.225.12:5500/task/ikea-login.html" class="link" role="button" aria-disabled="false">로그인 하기</a>
+                </span>
+                <div id="wrap-photo-box">
+                    <div id="left-side-photobox">
+                        <div class="left-first-photo"></div>
+                        <div class="left-second-photo"></div>
+                        <div class="left-third-photo"></div>
+                        <div class="left-fourth-photo"></div>
+                    </div>
+                    <div id="right-side-photobox">
+                        <div class="right-first-photo"></div>
+                        <div class="right-second-photo"></div>
+                        <div class="right-third-photo"></div>
+                        <div class="right-fourth-photo"></div>
+                        <div class="right-fifth-photo"></div>
+                    </div>
+                </div>
+                <div class="second-third-space"></div>
+            </div>
+            <div id="third-box" class="left-box">
+                <div class="footer">
+                    <span class="kiosk-label">
+                        IKEA.kr - 
+                    </span>
+                    <a target="_blank" href="https://www.ikea.com/kr/ko/customer-service/cookie-policy" class="cookie-policy-link" aria-disabled="false">쿠키 정책</a>
+                    <span class="kiosk-label"> , </span>
+                    <a target="_blank" href="https://www.ikea.com/kr/ko/customer-service/privacy-policy/privacy-policy-pub20a57ecd" class="privacy-policy-link" aria-disabled="false">개인정보처리방침</a>
+                    <div class="kiosk-label">© Inter IKEA Systems B.V. 1999-2023</div>
+                </div>
+            </div>
+        </div>        
+        <div id="right-side" class="container">
+            <div class="right-row">
+                <form novalidate name="signup-form">
+                    <fieldset role="radiogroup" class="radio-button-group" id="family-signup-form-profileType">
+                        <legend>IKEA Family에 가입하시겠어요?</legend>
+                        <span class="radio">
+                            <div class="radio-profile">
+                                <input type="radio" name="profileType" id="family-signup-form-profileType-family-option" value="family" checked="">
+                            </div>
+                            <label for="family-signup-form-profileType-family-option" class>
+                                <div class="profileType-family">
+                                    예, IKEA Family의 다양한 혜택 및 할인을 즐기고 싶습니다! 
+                                    <a href="#" class="benefit-link" role="button" aria-disabled="false">IKEA Family 혜택</a>
+                                </div>
+                            </label>
+                        </span>
+                        <span class="radio">
+                            <div class="radio-profile"> 
+                                <input type="radio" name="profileType" id="family-signup-form-profileType-regular-option" value="regular">
+                            </div>
+                            <label for="family-signup-form-profileType-regular-option" class>
+                                <div class="profileType-regular">
+                                    아니요, 추가 혜택 없이 온라인 몰만 가입하고 싶습니다.
+                                    <a href="#" class="benefit-link" role="button" aria-disabled="false">IKEA Family 혜택</a>
+                                </div>
+                            </label>
+                        </span>
+                    </fieldset>
+                    <div class="signup-form-space"></div>
+                    <div class="form-lastName">
+                        <div class="input-lastName-wrap">
+                            <div class="lastName">
+                                <label id="family-signup-form-lastName-label" for="family-signup-form-lastName">
+                                    성
+                                </label>
+                            </div>
+
+                            <div class="input-lastName">
+                                <input type="text" id="family-signup-form-lastName" required name="lastName" maxlength="50" aria-required="true">
+                                <!--<span class="input-field-border"></span> 자바스크립트용-->
+                            </div>
+                        </div>
+                        <div class="form-error">
+                            <div id="family-signup-form-error" class="form-field__message-wrapper" type="error">
+                                <div class="form-field__icon-wrapper">
+                                    <svg focusable="false" viewBox="0 0 24 24" class="svg-icon form-field__icon" aria-hidden="true">
+                                        <path d="M12.9482 13.1025h-2.0035v-6h2l.0035 6zm-2.25 2.75c0-.6903.5597-1.25 1.25-1.25.6904 0 1.25.5597 1.25 1.25 0 .6904-.5596 1.25-1.25 1.25-.6903 0-1.25-.5596-1.25-1.25z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                    <div class="form-error-message">
+                                    <div>성 필드는 필수 필드입니다.
+                                    </div>&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="signup-form-space"></div>
+                    <div class="form-name">
+                        <div class="input-name-wrap">
+                            <div class="name">
+                                <label id="family-signup-form-name-label" for="family-signup-form-name">
+                                    이름
+                                </label>
+                            </div>
+
+                            <div class="input-name">
+                                <input type="text" id="family-signup-form-name" required name="name" maxlength="50" aria-required="true">
+                                <!--<span class="input-field-border"></span> 자바스크립트용-->
+                            </div>
+                        </div>
+                        <div class="form-error">
+                            <div id="family-signup-form-error" class="form-field__message-wrapper" type="error">
+                                <div class="form-field__icon-wrapper">
+                                    <svg focusable="false" viewBox="0 0 24 24" class="svg-icon form-field__icon" aria-hidden="true">
+                                        <path d="M12.9482 13.1025h-2.0035v-6h2l.0035 6zm-2.25 2.75c0-.6903.5597-1.25 1.25-1.25.6904 0 1.25.5597 1.25 1.25 0 .6904-.5596 1.25-1.25 1.25-.6903 0-1.25-.5596-1.25-1.25z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                    <div class="form-error-message">
+                                    <div>이름 필드는 필수 필드입니다.
+                                    </div>&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="signup-form-space"></div>
+                    <div class="form-birth">
+                        <div class="input-birth-wrap">
+                            <div class="birth">
+                                <label id="family-signup-form-birth-label" for="family-signup-form-birth">
+                                    생일
+                                </label>
+                                <div>
+                                    <svg focusable="false" viewBox="0 0 24 24" class="svg-icon" aria-hidden="true"><path d="M12 9.5c.6904 0 1.25-.5596 1.25-1.25S12.6904 7 12 7s-1.25.5596-1.25 1.25S11.3096 9.5 12 9.5zM11 11v6h2v-6h-2z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.4771 2 2 6.4771 2 12c0 5.5228 4.4771 10 10 10 5.5228 0 10-4.4772 10-10 0-5.5229-4.4772-10-10-10zM4 12c0-4.4183 3.5817-8 8-8s8 3.5817 8 8-3.5817 8-8 8-8-3.5817-8-8z"></path></svg>
+                                </div>
+                            </div>
+
+                            <div class="input-birth">
+                                <input type="text" id="family-signup-form-birth" required name="birth" maxlength="50" aria-required="true">
+                                <!--<span class="input-field-border"></span> 자바스크립트용-->
+                            </div>
+                        </div>
+                        <div class="form-error">
+                            <div id="family-signup-form-error" class="form-field__message-wrapper" type="error">
+                                <div class="form-field__icon-wrapper">
+                                    <svg focusable="false" viewBox="0 0 24 24" class="svg-icon form-field__icon" aria-hidden="true">
+                                        <path d="M12.9482 13.1025h-2.0035v-6h2l.0035 6zm-2.25 2.75c0-.6903.5597-1.25 1.25-1.25.6904 0 1.25.5597 1.25 1.25 0 .6904-.5596 1.25-1.25 1.25-.6903 0-1.25-.5596-1.25-1.25z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="form-error-message">
+                                    <div>생일 필드는 필수 필드입니다.
+                                    </div>&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="birth-format-message">
+                            <div>YYYY-MM-DD
+                        </div>
+                    </div>
+
+                    <div class="signup-form-space"></div>
+                    <div class="form-phone">
+                        <div class="input-phone-wrap">
+                            <div class="phone">
+                                <label id="family-signup-form-phone-label" for="family-signup-form-phone">
+                                    휴대폰
+                                </label>
+                            </div>
+
+                            <div class="input-phone">
+                                <input type="text" id="family-signup-form-phone" required name="phone" maxlength="50" aria-required="true" placeholder="KR (+82)">
+                                <!--<span class="input-field-border"></span> 자바스크립트용-->
+                            </div>
+                        </div>
+                        <div class="form-error">
+                            <div id="family-signup-form-error" class="form-field__message-wrapper" type="error">
+                                <div class="form-field__icon-wrapper">
+                                    <svg focusable="false" viewBox="0 0 24 24" class="svg-icon form-field__icon" aria-hidden="true">
+                                        <path d="M12.9482 13.1025h-2.0035v-6h2l.0035 6zm-2.25 2.75c0-.6903.5597-1.25 1.25-1.25.6904 0 1.25.5597 1.25 1.25 0 .6904-.5596 1.25-1.25 1.25-.6903 0-1.25-.5596-1.25-1.25z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                    <div class="form-error-message">
+                                    <div>휴대폰 필드는 필수 필드입니다.
+                                    </div>&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="signup-form-space"></div>
+                    <div class="form-gender">
+                        <div class="input-gender-wrap">
+                            <div class="gender">
+                                <label id="family-signup-form-gender-label" for="family-signup-form-gender">
+                                    성별 (선택사항)
+                                </label>
+                            </div>
+
+                            <div class="input-gender">
+                                <select id="family-signup-form-genderCode" name="genderCode">
+                                    <option id="family-signup-form-genderCode-option-none"></option>
+                                    <option value="MALE" id="family-signup-form-genderCode-option-MALE">남성</option>
+                                    <option value="FEMALE" id="family-signup-form-genderCode-option-FEMALE">여성</option>
+                                    <option value="PREFER_NOT_TO_SAY" id="family-signup-form-genderCode-option-PREFER_NOT_TO_SAY">응답 거부</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="signup-form-space"></div>
+                    <div class="form-address">
+                        <button type="button" class="btn-address">
+                            <span class="btn-inner">
+                                <span class="btn-address-label">우편번호 찾기</span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="signup-form-space"></div>
+                    <div class="form-address1">
+                        <div class="input-address1-wrap">
+                            <div class="address1">
+                                <label id="family-signup-form-address1-label" for="family-signup-form-address1">
+                                    도로명 주소
+                                </label>
+                            </div>
+
+                            <div class="input-address1">
+                                <input type="text" id="family-signup-form-address1" disabled  required name="address1" maxlength="50" aria-required="true" value="">
+                                <span class="input-field-border"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="signup-form-space"></div>
+                    <div class="form-address2">
+                        <div class="input-address2-wrap">
+                            <div class="address2">
+                                <label id="family-signup-form-address2-label" for="family-signup-form-address2">
+                                    상세 주소    
+                                </label>
+                            </div>
+
+                            <div class="input-address2">
+                                <input type="text" id="family-signup-form-address2" required name="address2" maxlength="50" aria-required="true">
+                                <!--<span class="input-field-border"></span> 자바스크립트용-->
+                            </div>
+                        </div>
+                        <div class="form-error">
+                            <div id="family-signup-form-error" class="form-field__message-wrapper" type="error">
+                                <div class="form-field__icon-wrapper">
+                                    <svg focusable="false" viewBox="0 0 24 24" class="svg-icon form-field__icon" aria-hidden="true">
+                                        <path d="M12.9482 13.1025h-2.0035v-6h2l.0035 6zm-2.25 2.75c0-.6903.5597-1.25 1.25-1.25.6904 0 1.25.5597 1.25 1.25 0 .6904-.5596 1.25-1.25 1.25-.6903 0-1.25-.5596-1.25-1.25z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                    <div class="form-error-message">
+                                    <div>상세 주소 필드는 필수 필드입니다.
+                                    </div>&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="signup-form-space"></div>
+                    <div class="form-zipcode">
+                        <div class="input-zipcode-wrap">
+                            <div class="zipcode">
+                                <label id="family-signup-form-zipcode-label" for="family-signup-form-zipcode">
+                                    우편번호
+                                </label>
+                            </div>
+
+                            <div class="input-zipcode">
+                                <input type="text" id="family-signup-form-zipcode" disabled  required name="zipcode" maxlength="50" aria-required="true" value="">
+                                <span class="input-field-border"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="signup-form-space"></div>
+                    <div class="form-preferredStore">
+                        <div class="input-preferredStore-wrap">
+                            <div class="preferredStore">
+                                <label id="family-signup-form-preferredStore-label" for="family-signup-form-preferredStore">
+                                    선호하는 매장
+                                </label>
+                            </div>
+
+                            <div class="input-preferredStore">
+                                <select id="family-signup-form-preferredStore" name="preferredStore">
+                                    <option id="family-signup-form-preferredStore-option-none" style="display: none;" ></option>
+                                    <option value="602" id="family-signup-form-preferredStore-option-602">동부산</option>
+                                    <option value="582" id="family-signup-form-preferredStore-option-582">기흥</option>
+                                    <option value="522" id="family-signup-form-preferredStore-option-522">고양</option>
+                                    <option value="373" id="family-signup-form-preferredStore-option-373">광명</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="signup-form-space"></div>
+                    <div class="form-email">
+                        <div class="input-email-wrap">
+                            <div class="email">
+                                <label id="family-signup-form-email-label" for="family-signup-form-email">
+                                    이메일
+                                </label>
+                            </div>
+
+                            <div class="input-email">
+                                <input type="text" id="family-signup-form-email" required name="email" maxlength="50" aria-required="true">
+                                <!--<span class="input-field-border"></span> 자바스크립트용-->
+                            </div>
+                        </div>
+                        <div class="form-error">
+                            <div id="family-signup-form-error" class="form-field__message-wrapper" type="error">
+                                <div class="form-field__icon-wrapper">
+                                    <svg focusable="false" viewBox="0 0 24 24" class="svg-icon form-field__icon" aria-hidden="true">
+                                        <path d="M12.9482 13.1025h-2.0035v-6h2l.0035 6zm-2.25 2.75c0-.6903.5597-1.25 1.25-1.25.6904 0 1.25.5597 1.25 1.25 0 .6904-.5596 1.25-1.25 1.25-.6903 0-1.25-.5596-1.25-1.25z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                    <div class="form-error-message">
+                                    <div>이메일 필드는 필수 필드입니다.
+                                    </div>&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="signup-form-space"></div>
+                    <div class="form-password">
+                        <div class="input-password-wrap">
+                            <div class="password">
+                                <label id="family-signup-form-password-label" for="family-signup-form-password">
+                                    비밀번호    
+                                </label>
+                            </div>
+
+                            <div class="input-password">
+                                <input type="text" id="family-signup-form-password" required name="password" maxlength="50" aria-required="true">
+                           
+                                    <span class="btn-inner2">
+                                        <svg focusable="false" viewBox="0 0 24 24" class="svg-icon btn__icon" aria-hidden="true">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9995 8c-2.2091 0-4 1.7909-4 4 0 2.2091 1.7908 4 4 4 2.2091 0 4-1.7909 4-4 0-2.2091-1.7909-4-4-4zm-2 4c0-1.1046.8954-2 2-2s2 .8954 2 2-.8954 2-2 2-2-.8954-2-2z"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2041 12c-.191.2843-.3779.5712-.58.8478a18.5559 18.5559 0 0 1-.5547.719c-.4773.5895-1.1694 1.3776-2.0285 2.1688C17.3585 17.2851 14.87 19 11.9995 19c-2.8705 0-5.359-1.7149-7.0414-3.2644-.859-.7912-1.5512-1.5793-2.0285-2.1688a18.5293 18.5293 0 0 1-.5547-.719c-.202-.2765-.389-.5636-.58-.8478l.3748-.558c.2366-.3481.4952-.6818.7599-1.0088.4773-.5895 1.1694-1.3776 2.0285-2.1688C6.6405 6.715 9.129 5 11.9995 5c2.8705 0 5.359 1.715 7.0414 3.2644.8591.7912 1.5512 1.5793 2.0285 2.1688.2393.2956.4262.5432.5547.719.202.2765.3891.5635.58.8478zM4.2399 12c.4213-.5445 1.1436-1.4084 2.073-2.2644C7.888 8.285 9.8995 7 11.9996 7c2.1001 0 4.1116 1.285 5.6865 2.7356.9295.8561 1.6518 1.7199 2.0731 2.2644-.4213.5445-1.1436 1.4083-2.0731 2.2644C16.1111 15.7149 14.0996 17 11.9995 17c-2.1 0-4.1116-1.2851-5.6865-2.7356-.9295-.8561-1.6518-1.7199-2.0731-2.2644z"></path>
+                                        </svg>
+                                      
+                                    </span>
+                             
+                                <span class="input-field-border2"></span> 
+                            </div>
+                        </div>
+                        <div class="form-error">
+                            <div id="family-signup-form-error" class="form-field__message-wrapper" type="error">
+                                <div class="form-field__icon-wrapper">
+                                    <svg focusable="false" viewBox="0 0 24 24" class="svg-eye-icon" aria-hidden="true">
+                                        <path d="M12.9482 13.1025h-2.0035v-6h2l.0035 6zm-2.25 2.75c0-.6903.5597-1.25 1.25-1.25.6904 0 1.25.5597 1.25 1.25 0 .6904-.5596 1.25-1.25 1.25-.6903 0-1.25-.5596-1.25-1.25z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                    <div class="form-error-message">
+                                    <div>비밀번호 필드는 필수 필드입니다.
+                                    </div>&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="signup-form-space"></div>
+                    <div class="form-field" style="position: relative;">
+                        <fieldset class="checkbox-group" role="group">
+                            <legend></legend>
+                            <span class="checkbox1">
+                                <input type="checkbox" name="communications" id="family-signup-form-contact-method-communications" text="나의 프로필, 관심사 그리고 구매 이력에 따라 맞춰진 IKEA의 홈퍼니싱 아이디어와 신상품 소식, 그리고 할인 혜택 정보를 받고 싶어요!" value="">    
+                                <span class="checkbox-label">
+                                    <label for="family-signup-form-contact-method-communications" class>나의 프로필, 관심사 그리고 구매 이력에 따라 맞춰진 IKEA의 홈퍼니싱<br> 아이디어와 신상품 소식, 그리고 할인 혜택 정보를 받고 싶어요!</label>
+                                </span>
+                            </span>
+                            <span class="checkbox contact-group-children">
+                                <input type="checkbox" name="allowEmail" id="family-signup-form-contact-method-allowEmail" text="이메일 수신" value="" class="">
+                                <span class="checkbox-label">
+                                    <label for="family-signup-form-contact-method-allowEmail" class="">이메일 수신</label>
+                                </span>
+                            </span>
+                            <span class="checkbox contact-group-children"><input type="checkbox" name="allowSMS" id="family-signup-form-contact-method-allowSMS" text="문자 수신" value="">
+                                <span class="checkbox-label">
+                                    <label for="family-signup-form-contact-method-allowSMS" class="">문자 수신</label>
+                                </span>
+                            </span>
+                            <span class="checkbox contact-group-children last-children">
+                                <input type="checkbox" name="allowDirectMail" id="family-signup-form-contact-method-allowDirectMail" text="우편물 수신" value="">
+                                <span class="checkbox-label"><label for="family-signup-form-contact-method-allowDirectMail" class="">우편물 수신</label>
+                                </span>
+                            </span>
+                        </fieldset>
+                    </div>
+
+                    <div class="signup-form-space"></div>
+                    <div class="form-field" style="position: relative;">
+                        <span class="checkbox"><input type="checkbox" name="acceptTermsAndConditions" id="family-signup-form-acceptTermsAndConditions" aria-describedby="family-signup-form-acceptTermsAndConditions" value="">
+                            <span class="checkbox-label">
+                                <label for="family-signup-form-acceptTermsAndConditions" class="">
+                                    <div>(필수) 약관을 모두 읽고 동의합니다. 
+                                        <a target="_blank" aria-label="acceptTermsAndConditions" href="https://www.ikea.com/kr/ko/customer-service/terms-conditions" class="link" aria-disabled="false">이용약관</a>
+                                    </div>
+                                </label>
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="form-field" style="position: relative;">
+                        <span class="checkboxlong">
+                            <input type="checkbox" name="acceptPrivacyPolicy" id="family-signup-form-acceptPrivacyPolicy" aria-describedby="family-signup-form-acceptPrivacyPolicy" value="">
+                                <span class="checkbox-label"><label for="family-signup-form-acceptPrivacyPolicy" class="">
+                                    <div>(필수) 개인정보 수집ㆍ이용에 동의합니다. 
+                                        <a target="_blank" aria-label="acceptPrivacyPolicy" href="https://www.ikea.com/kr/ko/customer-service/privacy-policy/privacy-policy-pub20a57ecd" class="link" aria-disabled="false">개인정보 수집ㆍ이용 동의</a>
+                                    </div>
+                                </label>
+                            </span>
+                        </span>
+                    </div>
+
+                    <div class="signup-form-space"></div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn-submit" id="singup-form-submit-button">
+                            <span class="btn-inner3">
+                                <span class="btn-submit-label">이메일 주소 확인 하기</span>
+                            </span>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>        
+    </div>
+</body>
+</html>
